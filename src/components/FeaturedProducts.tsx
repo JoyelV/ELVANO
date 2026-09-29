@@ -7,7 +7,7 @@ export interface FeaturedProductsProps {
   title: string;
   products: Product[];
   action?: ActionLink;
-  onQuickAction?: (product: Product) => void;
+  onQuickAction?: ((product: Product) => void) | undefined;
 }
 
 export function FeaturedProducts({
