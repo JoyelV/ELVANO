@@ -47,7 +47,7 @@ export const Route = createFileRoute("/")({
 });
 
 function HomePage() {
-  const showcaseProduct = demoProducts[0];
+  const showcaseProduct = demoProducts[0]!;
 
   return (
     <StoreLayout>

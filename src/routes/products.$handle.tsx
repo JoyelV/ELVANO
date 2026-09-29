@@ -31,7 +31,7 @@ export const Route = createFileRoute("/products/$handle")({
 function ProductPage() {
   const { handle } = Route.useParams();
   const product =
-    demoProducts.find((item) => item.handle === handle) ?? demoProducts[0];
+    demoProducts.find((item) => item.handle === handle) ?? demoProducts[0]!;
   const related = demoProducts.filter((item) => item.id !== product.id).slice(0, 4);
 
   return (

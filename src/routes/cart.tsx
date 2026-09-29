@@ -31,8 +31,8 @@ export const Route = createFileRoute("/cart")({
 });
 
 const initialLines: CartLine[] = [
-  { id: "demo-cart-line-1", product: demoProducts[0], quantity: 1, variantTitle: "One size" },
-  { id: "demo-cart-line-2", product: demoProducts[1], quantity: 2, variantTitle: "M" },
+  { id: "demo-cart-line-1", product: demoProducts[0]!, quantity: 1, variantTitle: "One size" },
+  { id: "demo-cart-line-2", product: demoProducts[1]!, quantity: 2, variantTitle: "M" },
 ];
 
 function CartPage() {

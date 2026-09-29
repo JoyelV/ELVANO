@@ -5,8 +5,8 @@ import type { Product } from "@/types/theme";
 export interface ProductCardProps {
   product: Product;
   /** Optional quick action wired by the host runtime. */
-  onQuickAction?: (product: Product) => void;
-  quickActionLabel?: string;
+  onQuickAction?: ((product: Product) => void) | undefined;
+  quickActionLabel?: string | undefined;
 }
 
 export function ProductCard({
